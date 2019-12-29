@@ -1,0 +1,33 @@
+* {
+	box-sizing:border-box;
+}
+
+.carousel {
+	position: relative;
+	height: 600px;
+	width: 800px;
+}
+
+.arrowContainer {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	height: 70px;
+	margin: auto;
+	width: 35px;
+	background-color: rgb(120, 120, 120, 0.35); 
+}
+
+#rightArrowContainer {
+	right: 0px;
+}
+
+.arrow {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 50%;
+	filter: invert(1);
