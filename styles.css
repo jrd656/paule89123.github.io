@@ -6,6 +6,7 @@
 	position: relative;
 	height: 600px;
 	width: 800px;
+	margin: auto;
 }
 
 .arrowContainer {
@@ -15,6 +16,11 @@
 	height: 70px;
 	margin: auto;
 	width: 35px;
+	cursor: pointer;
+	transition: 0.28s ease;
+}
+
+.arrowContainer:hover {
 	background-color: rgb(120, 120, 120, 0.35); 
 }
 

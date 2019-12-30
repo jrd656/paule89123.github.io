@@ -10,7 +10,6 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 
-
 <body>
     <header>
     	<h1>Paul Evans</h1>
@@ -22,23 +21,26 @@
 </div>
 
 <div class="carousel">
+    <img class="photo" height="100%" src="./images/photo1.jpg" alt="Street in Bucharest">
+    <img class="photo" height="100%" src="./images/photo2.jpg" alt="Church in Bucharest">
+    <img class="photo" height="100%" src="./images/photo3.jpg" alt="Old street in Bucharest">
+    <img class="photo" height="100%" src="./images/photo4.jpg" alt="Umbrellas">
+    <img class="photo" height="100%" src="./images/photo5.jpg" alt="Edenland park">
 
-    <img height="100%" src="./images/photo1.jpg" alt="Street in Bucharest">
-    <img height="100%" src="./images/photo2.jpg" alt="Church in Bucharest">
-    <img height="100%" src="./images/photo3.jpg" alt="Old street in Bucharest">
-    <img height="100%" src="./images/photo4.jpg" alt="Umbrellas">
-    <img height="100%" src="./images/photo5.jpg" alt="Edenland park">
+    <a onclick="changePhoto(-1)">
+        <div id="leftArrowContainer" class="arrowContainer">
+            <img class="arrow" src="./images/back.svg" alt="Back">
+        </div>
+    </a>
 
-    <div id="leftArrowContainer" class="arrowContainer">
-        <img class="arrow" src="./images/back.svg" alt="Back">
-    </div>
-
-    <div id="rightArrowContainer" class="arrowContainer">
-        <img class="arrow" src="./images/next.svg" alt="Next">
-    </div>
-
+    <a onclick="changePhoto(1)">
+        <div id="rightArrowContainer" class="arrowContainer">
+            <img class="arrow"  src="./images/next.svg" alt="Next">
+        </div>
+    </a>
 </div>
 
-</body>
+<script src="carousel.js"></script>
 
+</body>
 </html>
