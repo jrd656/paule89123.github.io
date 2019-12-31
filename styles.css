@@ -36,7 +36,6 @@ h1 {
 	height: 690px;
 	padding-left: 70px;
 	padding-bottom: 20px;
-
 }
 
 #bio {
@@ -93,4 +92,18 @@ h1 {
     margin: auto;
     width: 50%;
 	filter: invert(1);
+}
+
+#playPauseContainer {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	margin: auto;
+}
+
+.playPauseButton {
+	height: 30px;
+	filter: invert(1);
+	opacity: 90%;
+	cursor: pointer;
 }

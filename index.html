@@ -13,8 +13,8 @@
 
 <body>
 
-<img id="triangle" src="./images/red-triangle.svg">
-<img id="me" src="./images/me.png">
+<img id="triangle" src="./images/red-triangle.svg" alt="">
+<img id="me" src="./images/me.png" alt="">
 
 <header>
 	<h1>Paul Evans</h1>
@@ -42,22 +42,32 @@ Besides coding, I also enjoy travelling and producing electronic music. Below yo
 
 <div class="carousel-container">
     <div class="carousel">
-        <img class="photo" src="./images/photo5.jpg" alt="Edenland park" id="firstClone">
+        <img class="photo" src="./images/photo5.jpg" alt="Edenland park">
         <img class="photo" src="./images/photo1.jpg" alt="Street in Bucharest">
         <img class="photo" src="./images/photo2.jpg" alt="Church in Bucharest">
         <img class="photo" src="./images/photo3.jpg" alt="Old street in Bucharest">
         <img class="photo" src="./images/photo4.jpg" alt="Umbrellas">
         <img class="photo" src="./images/photo5.jpg" alt="Edenland park">
-        <img class="photo" src="./images/photo1.jpg" alt="Street in Bucharest" id="lastClone">
+        <img class="photo" src="./images/photo1.jpg" alt="Street in Bucharest">
     </div>
 
-        <div id="leftArrowContainer" class="arrowContainer">
-            <img class="arrow" src="./images/back.svg" alt="Back">
-        </div>
+    <div id="leftArrowContainer" class="arrowContainer">
+        <img class="arrow" src="./images/back.svg" alt="Back">
+    </div>
 
-        <div id="rightArrowContainer" class="arrowContainer">
-            <img class="arrow"  src="./images/next.svg" alt="Next">
-        </div>
+    <div id="rightArrowContainer" class="arrowContainer">
+        <img class="arrow"  src="./images/next.svg" alt="Next">
+    </div>
+
+    <div id="playPauseContainer">
+        <span>
+            <img id="play" class="playPauseButton" src="./images/play.svg" alt="Play">
+        </span>
+
+        <span>
+            <img id="pause" class="playPauseButton" src="./images/pause.svg" alt="Pause">
+        </span>
+    </div>
 </div>
 
 <script src="carousel.js"></script>
