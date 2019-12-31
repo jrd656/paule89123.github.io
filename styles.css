@@ -2,6 +2,51 @@
 	box-sizing:border-box;
 }
 
+body {
+	margin: 0px;
+	background-color: #e7fdff;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #333;
+}
+
+h1 {
+	padding-top: 37px;
+	position: relative;
+	left: 165px;
+	font-family: 'Abril Fatface', cursive;
+    font-size: 5.9em;
+    font-weight: 400;
+    width: 700px;
+    line-height: 110px;
+}
+
+#triangle {
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	height: 620px;
+	z-index:-1;
+}
+
+#me {
+	position: relative;
+	float: right;
+	top: -40px;
+	right: 10px;
+	height: 690px;
+	padding-left: 70px;
+	padding-bottom: 20px;
+
+}
+
+#bio {
+	width: 800px;
+	margin: auto;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+
 .carousel {
 	position: relative;
 	height: 600px;
@@ -14,14 +59,14 @@
 	top: 0px;
 	bottom: 0px;
 	height: 70px;
-	margin: auto;
 	width: 35px;
+	margin: auto;
 	cursor: pointer;
 	transition: 0.28s ease;
 }
 
 .arrowContainer:hover {
-	background-color: rgb(120, 120, 120, 0.35); 
+	background-color: rgb(160, 160, 160, 0.5); 
 }
 
 #rightArrowContainer {
@@ -37,3 +82,4 @@
     margin: auto;
     width: 50%;
 	filter: invert(1);
+}
