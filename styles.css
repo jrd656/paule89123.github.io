@@ -46,12 +46,23 @@ h1 {
 	line-height: 1.5em;
 }
 
-
-.carousel {
+.carousel-container {
 	position: relative;
 	height: 600px;
 	width: 800px;
 	margin: auto;
+	margin-bottom: 120px;
+	overflow: hidden;
+}
+
+.carousel {
+	display: flex;
+	height: 100%;
+}
+
+.photo {
+	position: relative;
+	height: 100%;
 }
 
 .arrowContainer {

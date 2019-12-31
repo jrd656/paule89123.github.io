@@ -37,27 +37,27 @@ So far I have been learning HTML, CSS and Javascript via various online platform
 I first heard about Founders and Coders from a friend of mine who is a Founders and Coders alumni and he highly recommended the course. In particular, he impressed upon me that his experience of teaching others how to code in Israel was a great way to reinforce the concepts that he learnt on the course.
 <br><br>
 Besides coding, I also enjoy travelling and producing electronic music. Below you will find a sample of a few photos I took on a recent trip to Bucharest, Romania!
-<br><br>
+<br><br><br>
 </div>
 
-<div class="carousel">
-    <img class="photo" height="100%" src="./images/photo1.jpg" alt="Street in Bucharest">
-    <img class="photo" height="100%" src="./images/photo2.jpg" alt="Church in Bucharest">
-    <img class="photo" height="100%" src="./images/photo3.jpg" alt="Old street in Bucharest">
-    <img class="photo" height="100%" src="./images/photo4.jpg" alt="Umbrellas">
-    <img class="photo" height="100%" src="./images/photo5.jpg" alt="Edenland park">
+<div class="carousel-container">
+    <div class="carousel">
+        <img class="photo" src="./images/photo5.jpg" alt="Edenland park" id="firstClone">
+        <img class="photo" src="./images/photo1.jpg" alt="Street in Bucharest">
+        <img class="photo" src="./images/photo2.jpg" alt="Church in Bucharest">
+        <img class="photo" src="./images/photo3.jpg" alt="Old street in Bucharest">
+        <img class="photo" src="./images/photo4.jpg" alt="Umbrellas">
+        <img class="photo" src="./images/photo5.jpg" alt="Edenland park">
+        <img class="photo" src="./images/photo1.jpg" alt="Street in Bucharest" id="lastClone">
+    </div>
 
-    <a onclick="changePhoto(-1)">
         <div id="leftArrowContainer" class="arrowContainer">
             <img class="arrow" src="./images/back.svg" alt="Back">
         </div>
-    </a>
 
-    <a onclick="changePhoto(1)">
         <div id="rightArrowContainer" class="arrowContainer">
             <img class="arrow"  src="./images/next.svg" alt="Next">
         </div>
-    </a>
 </div>
 
 <script src="carousel.js"></script>
