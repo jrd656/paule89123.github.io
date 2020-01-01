@@ -8,8 +8,18 @@ const pauseBtn = document.querySelector("#pause");
 const playBtn = document.querySelector("#play");
 let paused = false;
 
-prevBtn.addEventListener("click", function(){changePhoto(-1)});
-nextBtn.addEventListener("click", function(){changePhoto(1)});
+prevBtn.addEventListener("click", () => {
+  changePhoto(-1);
+  clearInterval(interval);
+  interval = setInterval(changePhoto, 2500, 1);
+  });
+
+nextBtn.addEventListener("click", () => {
+  changePhoto(1);
+  clearInterval(interval);
+  interval = setInterval(changePhoto, 2500, 1);
+  });
+
 carousel.addEventListener("transitionend", reset);
 pauseBtn.addEventListener("click", pause);
 playBtn.addEventListener("click", play);
@@ -48,14 +58,18 @@ carousel.style.transform = `translateX(${translationAmount}px)`;
 document.onkeydown = function(event) {
   if (event.keyCode == 37) {
     changePhoto(-1);
+    clearInterval(interval);
+    interval = setInterval(changePhoto, 2500, 1);
   }
   if (event.keyCode == 39) {
     changePhoto(1);
+    clearInterval(interval);
+    interval = setInterval(changePhoto, 2500, 1);
   }
 }
 
 // Automatically start slideshow:
-let interval = setInterval(changePhoto, 3000, 1);
+let interval = setInterval(changePhoto, 2500, 1);
 
 function pause() {
   clearInterval(interval);
@@ -64,7 +78,7 @@ function pause() {
 
 function play() {
   if (paused === true) {
-  setInterval(changePhoto, 3000, 1);
-  paused = false;
+  interval = setInterval(changePhoto, 2500, 1);
   }
+  paused = false;
 }
