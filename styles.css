@@ -3,43 +3,47 @@
 }
 
 body {
+	position: relative;
 	margin: 0px;
 	background-color: #e7fdff;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #333;
+	overflow-x: hidden;
 }
 
 h1 {
 	padding-top: 37px;
 	position: relative;
-	left: 165px;
+	left: 13%;
 	font-family: 'Abril Fatface', cursive;
-    font-size: 5.9em;
+    font-size: 7.4vw;
     font-weight: 400;
-    width: 700px;
-    line-height: 110px;
+    width: 600px;
+    line-height: 7.4vw;
 }
 
 #triangle {
 	position: absolute;
-	top: 30px;
+	top: -35px;
 	right: 0px;
-	height: 620px;
+	width: 50%;
 	z-index:-1;
 }
 
 #me {
 	position: relative;
 	float: right;
-	top: -40px;
+	top: -10px;
 	right: 10px;
-	height: 690px;
+	width: 50%;
+	min-width: 335px;
 	padding-left: 70px;
 	padding-bottom: 20px;
 }
 
 #bio {
 	width: 800px;
+	max-width: 74%;
 	margin: auto;
 	font-size: 1.5em;
 	line-height: 1.5em;
@@ -50,7 +54,7 @@ h1 {
 	height: 600px;
 	width: 800px;
 	margin: auto;
-	margin-bottom: 120px;
+	margin-bottom: 110px;
 	overflow: hidden;
 }
 
@@ -60,7 +64,7 @@ h1 {
 }
 
 .photo {
-	position: relative;
+	width: 100%;
 	height: 100%;
 }
 
@@ -90,20 +94,130 @@ h1 {
     right: 0;
     left: 0;
     margin: auto;
-    width: 50%;
+    width: 58%;
 	filter: invert(1);
 }
 
-#playPauseContainer {
+#playButtonContainer {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 7px;
+	right: 46px;
 	margin: auto;
+	height: 40px;
+	width: 40px;
+}
+
+#pauseButtonContainer {
+	position: absolute;
+	top: 7px;
+	right: 11px;
+	margin: auto;
+	height: 40px;
+	width: 40px;
 }
 
 .playPauseButton {
-	height: 30px;
+	position: absolute;
+	height: 32px;
 	filter: invert(1);
 	opacity: 90%;
 	cursor: pointer;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	text-align: center;
+}
+
+.playPauseButton:hover {
+	height: 34px;
+	opacity: 100%;
+}
+
+.playPauseButton:active {
+	height: 32px;
+	opacity: 55%;
+}
+
+
+@media (max-width: 992px) {
+		.carousel-container {
+			height: 80.645%;
+			width: 80.645%;
+			min-width: 768px;
+		}
+
+		#bio {
+			font-size: 1.4em;
+			line-height: 1.4em;
+		}
+
+		#me {
+			right: 50px;
+		}
+
+		#triangle {
+			top: -20px;
+			right: 50px;
+			width: 45%;
+		}
+}
+
+
+@media (max-width: 768px) {
+		.carousel-container {
+			height: 100%;
+			min-width: 100%;
+			margin-bottom: 80px;
+		}
+
+		#bio {
+			font-size: 1.3em;
+			line-height: 1.3em;
+		}
+
+		h1 {
+			font-size: 7.9vw;
+		}
+}
+
+
+@media (max-width: 600px) {
+		h1 {
+		    font-size: 3.7em;
+			position: absolute;
+			width: 100%;
+			top: 220px;
+			left: 0px;
+			right: 0px;
+			text-align: center;
+		}
+
+		#me {
+			position: absolute;
+			max-width: 300px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			padding: 0;
+			min-width: 300px;
+		}
+
+		#bio {
+			max-width: 84%;
+			position: relative;
+			top: 380px;
+		}
+
+		#triangle {
+			top: -104px;
+			right: 0px;
+			width: 88%;
+		}
+
+		.carousel-container {
+			top: 380px;
+			margin-bottom: 55px;
+		}
 }
