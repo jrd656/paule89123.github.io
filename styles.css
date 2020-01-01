@@ -22,6 +22,13 @@ h1 {
     line-height: 7.4vw;
 }
 
+.iconContainer {
+	position: absolute;
+	left: -9%;
+	top: 38px;
+	filter:brightness(30%);
+}
+
 #triangle {
 	position: absolute;
 	top: -35px;
@@ -38,11 +45,13 @@ h1 {
 	width: 50%;
 	min-width: 335px;
 	padding-left: 70px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 #bio {
+	position: relative;
 	width: 800px;
+	top: -10px;
 	max-width: 74%;
 	margin: auto;
 	font-size: 1.5em;
@@ -140,6 +149,10 @@ h1 {
 	opacity: 55%;
 }
 
+a {
+  color: black;
+}
+
 
 @media (max-width: 992px) {
 		.carousel-container {
@@ -149,6 +162,7 @@ h1 {
 		}
 
 		#bio {
+			top: 20px;
 			font-size: 1.4em;
 			line-height: 1.4em;
 		}
@@ -161,6 +175,16 @@ h1 {
 			top: -20px;
 			right: 50px;
 			width: 45%;
+		}
+
+		.iconContainer {
+			display: flex;
+			top: -40px;
+			left: 0px;
+		}
+
+		.icons {
+			padding-right: 50px;
 		}
 }
 
@@ -179,6 +203,14 @@ h1 {
 
 		h1 {
 			font-size: 7.9vw;
+		}
+
+		.iconContainer {
+			top: -35px;
+		}
+
+		.icons {
+			padding-right: 40px;
 		}
 }
 
@@ -207,7 +239,7 @@ h1 {
 		#bio {
 			max-width: 84%;
 			position: relative;
-			top: 380px;
+			top: 410px;
 		}
 
 		#triangle {
@@ -217,7 +249,20 @@ h1 {
 		}
 
 		.carousel-container {
-			top: 380px;
+			top: 400px;
 			margin-bottom: 55px;
+		}
+
+		.iconContainer {
+			top: -40px;
+			position: absolute;
+			left: 0px;
+			right: 10px;
+			margin: auto;
+			width: 205px;
+		}
+
+		.icons {
+			padding-right: 40px;
 		}
 }
