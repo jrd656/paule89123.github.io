@@ -18,7 +18,7 @@ h1 {
 	font-family: 'Abril Fatface', cursive;
     font-size: 7.4vw;
     font-weight: 400;
-    width: 600px;
+    width: 700px;
     line-height: 7.4vw;
 }
 
@@ -203,6 +203,7 @@ a {
 
 		h1 {
 			font-size: 7.9vw;
+			width: 500px;
 		}
 
 		.iconContainer {
